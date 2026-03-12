@@ -1,119 +1,175 @@
-/* Общие стили остаются прежними */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #39123a;
-    color: #ffffff;
+/* =======================
+RESET
+======================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-main.projects-container {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* центрируем карточки */
+body{
+font-family:'Montserrat',sans-serif;
+background:#39123a;
+color:#ffffff;
+display:flex;
+flex-direction:column;
 }
 
-main.projects-container h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    font-weight: 600;
+
+/* =======================
+PAGE CONTAINER
+======================= */
+
+.projects-container{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:70px 20px;
 }
 
-/* Grid Layout */
-.projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 150%; /* карточки занимают 80% ширины экрана */
+.projects-container h1{
+font-size:36px;
+margin-bottom:60px;
+font-weight:600;
 }
 
-/* Project Card */
-.project-card {
-    display: flex;
-    background: #200a20;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+/* =======================
+GRID
+======================= */
+
+.projects-grid{
+display:flex;
+flex-direction:column;
+gap:60px;
+
+width:90vw;
+max-width:1300px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+/* =======================
+PROJECT CARD
+======================= */
+
+.project-card{
+
+display:flex;
+align-items:stretch;
+
+background:#200a20;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 12px 45px rgba(0,0,0,0.35);
+
+transition:
+transform .25s ease,
+box-shadow .25s ease;
+
 }
 
-/* Image */
-.project-card img {
-    width: 768px;
-    object-fit: cover;
-    flex: 0 0 auto;
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 25px 70px rgba(0,0,0,0.45);
 }
 
-/* Content */
-.project-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+
+/* =======================
+IMAGE
+======================= */
+
+.project-card img{
+
+height:100%;
+aspect-ratio:1/1;
+
+object-fit:cover;
+
+flex-shrink:0;
+
+display:block;
+
 }
 
-.project-content h2 {
-    font-size: 1.8em;
-    margin: 0 0 15px 0;
-    color: #ffdd55;
+
+/* =======================
+CONTENT
+======================= */
+
+.project-content{
+
+flex:1;
+
+padding:35px 40px;
+
+display:flex;
+flex-direction:column;
+
 }
 
-/* Project Blocks */
-.project-block {
-    margin-bottom: 15px;
+.project-content h2{
+font-size:1.8em;
+margin-bottom:18px;
+color:#ffdd55;
 }
 
-.project-block h3 {
-    font-size: 1.2em;
-    margin: 10px 0 5px;
-    color: #ffcc00;
+
+/* =======================
+PROJECT BLOCKS
+======================= */
+
+.project-block{
+margin-bottom:18px;
 }
 
-.project-block ul, .project-block ol {
-    margin: 5px 0 5px 20px;
-    padding: 0;
+.project-block h3{
+font-size:1.15em;
+margin-bottom:8px;
+color:#ffcc00;
 }
 
-.project-block p, .project-block li {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #ffffff;
+.project-block p,
+.project-block li{
+line-height:1.6;
+font-size:0.96rem;
 }
 
-.project-block strong {
-    color: #ffdd55;
+.project-block ul,
+.project-block ol{
+margin-left:22px;
+margin-top:6px;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .projects-grid {
-        width: 90%; /* чуть уже на средних экранах */
-    }
+.project-block strong{
+color:#ffdd55;
 }
 
-@media (max-width: 768px) {
-    .projects-grid {
-        width: 100%; /* мобильные устройства */
-    }
 
-    .project-card {
-        flex-direction: column;
-        align-items: center;
-    }
+/* =======================
+RESPONSIVE
+======================= */
 
-    .project-card img {
-        width: 100%;
-    }
+@media (max-width:1000px){
 
-    .project-content {
-        padding: 15px;
-    }
+.project-card{
+flex-direction:column;
+}
+
+.project-card img{
+
+width:100%;
+height:auto;
+
+aspect-ratio:1/1;
+
+}
+
+.project-content{
+padding:28px;
+}
+
 }
