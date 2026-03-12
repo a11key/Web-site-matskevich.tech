@@ -14,47 +14,142 @@
     <header id="header-placeholder"></header>
     <main class="projects-container">
         <h1>Projects</h1>
-
         <div class="projects-grid">
+
+            <!-- Battery Tracking System -->
             <div class="project-card">
-                <img src="assets/images/SB.png" alt="Battery Tracking System &quot;Smart Battery&quot;">
-                <div>
+                <img src="assets/images/SB.png" alt="Battery Tracking System Smart Battery">
+                <div class="project-content">
                     <h2>Battery Tracking System “Smart Battery”</h2>
 
-                    <p>
-                    A hardware–software solution for real-time battery monitoring and visualization.
-                    The system consists of two modules:<br>
-                    <strong>Data Collector</strong> — measures pack voltage, current, and temperature, and transmits the data via radio.<br>
-                    <strong>Receiver</strong> — connects to a PC via USB and uploads the received data.
-                    </p>
+                    <div class="project-block">
+                        <strong>Domain:</strong> Embedded Systems, Battery Management Systems<br>
+                        <strong>Project Type:</strong> Experimental Development<br>
+                        <strong>Year:</strong> 2024–present<br>
+                        <strong>Role:</strong> Sole Developer
+                    </div>
 
-                    <p>
-                    The project also includes dedicated software for real-time visualization:
-                    it displays current measurements and plots dynamic graphs with adjustable scales.
-                    </p>
+                    <div class="project-block">
+                        <h3>Technical Summary</h3>
+                        <p>
+                            A data logger was designed to collect battery voltage, current, and temperature under real load conditions for model validation and parameterization.
+                        </p>
+                        <p>Device iterations:</p>
+                        <ol>
+                            <li>Initial real-time monitor – dual-unit system with wireless transmission to PC.</li>
+                            <li>Single-unit microSD logger – onboard storage, sampling up to 30 Hz.</li>
+                            <li>High-power adaptation – ranges 200 A / 100 V for electric buggy testing.</li>
+                            <li>PCB-based version – 6 deployable units with SoC estimation via Coulomb counting and EKF.</li>
+                        </ol>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>Sampling rate increased tenfold while maintaining accuracy: Temp ±0.5 °C, Voltage ±0.1 %, Current ±2 %.</li>
+                            <li>Scaled from prototype to 10 deployable units.</li>
+                            <li>Optimized data logging: 7.3 KB/sec; 16 GB microSD supports 27 days continuous recording.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Impact / Outcome</h3>
+                        <ul>
+                            <li>Validated UAV and electric buggy battery models under real conditions.</li>
+                            <li>Provided high-resolution data for accurate battery parameterization.</li>
+                            <li>Supplied measurements for reliable SoC estimation in the field.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Tags</h3>
+                        <p>Embedded Systems Design (Arduino) | PCB Design (KiCad) | Scientific Software Development (Python) | Battery Management Systems Algorithms</p>
+                    </div>
                 </div>
             </div>
 
+            <!-- Ion Wind Thruster -->
             <div class="project-card">
                 <img src="assets/images/ion_thrust.png" alt="Ion Wind Thruster">
-                <div>
+                <div class="project-content">
                     <h2>Ion Wind Thruster</h2>
-                    <p>
-                        Designed and validated an ion wind thruster. Developed a theoretical model of the ion wind effect and predicted thrust dependencies.<br>
-                        Simulated the electric field using ElCad.<br>
-                        Derived an empirical formula describing the relationship between thrust, electrode spacing, and circuit current.
-                    </p>
+
+                    <div class="project-block">
+                        <strong>Domain:</strong> Plasma Physics, High-Voltage Systems, Electrohydrodynamics<br>
+                        <strong>Project Type:</strong> Applied Research + Experimental Development<br>
+                        <strong>Year:</strong> 2024<br>
+                        <strong>Role:</strong> Experimental Systems Designer and Theoretical Model Developer
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Technical Summary</h3>
+                        <p>
+                            Investigated ion wind generated by corona discharge. Developed a theoretical model of thrust for a specific form factor.
+                            Demonstrated thrust depends linearly on electrode spacing and current.
+                        </p>
+                        <p>
+                            Designed and constructed experimental setup to validate the theoretical model. Explored the dependency of minimal corona discharge voltage on electrode curvature.
+                        </p>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>Derived empirical relationship between thrust, electrode spacing, and current.</li>
+                            <li>Validated theoretical formula with 10 % accuracy.</li>
+                            <li>Investigated minimal corona voltage dependency on electrode curvature.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Impact / Outcome</h3>
+                        <ul>
+                            <li>Won the MIPT Competition of Student Projects in Physics (2024, 2025).</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Tags</h3>
+                        <p>Data Analysis (Python) | Computational Modeling & Simulation (ElCad) | CAD Modeling (SolidWorks)</p>
+                    </div>
                 </div>
             </div>
 
+            <!-- Spiral Phase Plate -->
             <div class="project-card">
                 <img src="assets/images/vortex.png" alt="Spiral Phase Plate (DLW Lithography)">
-                <div>
+                <div class="project-content">
                     <h2>Spiral Phase Plate (DLW Lithography)</h2>
-                    <p>Modeled and fabricated phase plate via two-photon lithography. Analyzed with SEM and profilometer.</p>
+
+                    <div class="project-block">
+                        <strong>Domain:</strong> Optics, Microfabrication<br>
+                        <strong>Project Type:</strong> Experimental Development<br>
+                        <strong>Year:</strong> 2023<br>
+                        <strong>Role:</strong> Designer & Fabricator
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Technical Summary</h3>
+                        <p>
+                            Modeled and fabricated spiral phase plate via two-photon lithography. Characterized results using SEM and profilometer.
+                        </p>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>Successfully fabricated micro-optical elements with high precision.</li>
+                            <li>Analyzed structure morphology and verified theoretical models.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Tags</h3>
+                        <p>Optical Design | Microfabrication | SEM Analysis</p>
+                    </div>
                 </div>
             </div>
-          
+
         </div>
     </main>
 
